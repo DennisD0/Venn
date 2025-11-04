@@ -91,6 +91,9 @@ function createCard(data, seed) {
   const highlightsList = card.querySelector(".card__highlights");
   const frontFace = card.querySelector(".card__face--front");
   const backFace = card.querySelector(".card__face--back");
+  const closeBtn = card.querySelector(".card__close");
+  let restoreFocusEl = null;
+  let trapHandler = null;
 
   const photo = photoSet[seed % photoSet.length];
   media.style.backgroundImage = `url(${photo})`;
@@ -120,6 +123,39 @@ function createCard(data, seed) {
     backFace.setAttribute("aria-hidden", "false");
     overlay && overlay.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
+
+    // A11y: present as dialog and trap focus
+    restoreFocusEl = document.activeElement;
+    card.setAttribute("role", "dialog");
+    card.setAttribute("aria-modal", "true");
+    const focusables = card.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusables[0] || card;
+    first.focus();
+
+    trapHandler = (e) => {
+      if (e.key !== "Tab") return;
+      const list = Array.from(card.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      )).filter((el) => !el.hasAttribute("disabled") && el.offsetParent !== null);
+      if (list.length === 0) { e.preventDefault(); return; }
+      const firstEl = list[0];
+      const lastEl = list[list.length - 1];
+      const active = document.activeElement;
+      if (e.shiftKey) {
+        if (active === firstEl || !card.contains(active)) {
+          e.preventDefault();
+          lastEl.focus();
+        }
+      } else {
+        if (active === lastEl) {
+          e.preventDefault();
+          firstEl.focus();
+        }
+      }
+    };
+    card.addEventListener("keydown", trapHandler);
   }
 
   function closeCard() {
@@ -128,6 +164,13 @@ function createCard(data, seed) {
     backFace.setAttribute("aria-hidden", "true");
     overlay && overlay.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    // remove dialog semantics and restore focus
+    card.removeAttribute("role");
+    card.removeAttribute("aria-modal");
+    if (trapHandler) card.removeEventListener("keydown", trapHandler);
+    if (restoreFocusEl && typeof restoreFocusEl.focus === "function") {
+      restoreFocusEl.focus();
+    }
   }
 
   function handleActivate() {
@@ -158,6 +201,13 @@ function createCard(data, seed) {
     });
     window.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && card.classList.contains("card--expanded")) closeCard();
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      closeCard();
     });
   }
 

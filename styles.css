@@ -139,13 +139,7 @@ main {
   margin-top: 3rem;
 }
 
-.section__title {
-  font-size: 1.25rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(38, 38, 38, 0.6);
-  margin-bottom: 1rem;
-}
+.section__title { display: none; }
 
 .intro {
   max-width: 720px;
@@ -279,8 +273,8 @@ main {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
   z-index: 900;
   display: none;
 }
@@ -292,18 +286,18 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: min(860px, 92vw);
+  width: min(1200px, 96vw);
   z-index: 1000;
 }
 
 .card.card--expanded .card__inner {
-  transition: transform 600ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: transform 450ms cubic-bezier(0.22, 0.61, 0.36, 1);
   transform-style: preserve-3d;
   box-shadow: 0 28px 70px rgba(38, 38, 38, 0.35);
 }
 
 .card.card--expanded.card--flipped .card__inner {
-  transform: rotateY(180deg) scale(1.06);
+  transform: rotateY(180deg) scale(1.08);
 }
 
 .card.card--expanded .card__face--back {
@@ -314,6 +308,26 @@ main {
 .card.card--expanded .card__back {
   padding: 2rem;
 }
+
+.card__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--fg);
+  font-size: 1.1rem;
+  line-height: 1;
+  display: none;
+  cursor: pointer;
+}
+
+.card.card--expanded .card__close { display: inline-grid; place-items: center; }
+
+.card.card--expanded { width: min(1024px, 96vw); }
 
 .card__back {
   display: grid;
