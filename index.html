@@ -31,14 +31,7 @@
     </header>
 
     <main>
-      <section class="intro">
-        <p class="intro__eyebrow">Daily drop</p>
-        <h1>Endless signals from rising founders</h1>
-        <p class="intro__copy">
-          Scroll through a living moodboard of venture-backed visionaries, styled with the bright
-          energy of a HYPE cover story built for nonstop inspiration hunting.
-        </p>
-      </section>
+      <!-- Intro removed for a more minimal headerless layout -->
 
       <section id="latest" class="section">
         <h2 class="section__title">Latest</h2>
@@ -77,6 +70,7 @@
           </div>
           <div class="card__face card__face--back">
             <div class="card__back">
+              <button class="card__close" type="button" aria-label="Close">×</button>
               <h3 class="card__back-title"></h3>
               <p class="card__back-copy"></p>
               <ul class="card__highlights"></ul>
@@ -90,6 +84,8 @@
       <span class="loading__spinner"></span>
       <p>Loading more stories&hellip;</p>
     </div>
+    <!-- overlay for expanded card -->
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
 
     <script src="script.js" type="module"></script>
   </body>

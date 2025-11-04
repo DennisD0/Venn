@@ -7,6 +7,7 @@ const streams = {
   spotlight: document.getElementById("stream-spotlight"),
 };
 const loading = document.getElementById("loading");
+const overlay = document.getElementById("overlay");
 const cardTemplate = document.getElementById("card-template");
 
 const founders = [
@@ -113,22 +114,52 @@ function createCard(data, seed) {
   frontFace.setAttribute("aria-hidden", "false");
   backFace.setAttribute("aria-hidden", "true");
 
-  function toggleFlip() {
-    const isFlipped = card.classList.toggle("card--flipped");
-    card.setAttribute("aria-expanded", isFlipped ? "true" : "false");
-    frontFace.setAttribute("aria-hidden", isFlipped ? "true" : "false");
-    backFace.setAttribute("aria-hidden", isFlipped ? "false" : "true");
+  function openCard() {
+    card.classList.add("card--expanded", "card--flipped");
+    frontFace.setAttribute("aria-hidden", "true");
+    backFace.setAttribute("aria-hidden", "false");
+    overlay && overlay.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
   }
 
-  card.addEventListener("click", toggleFlip);
+  function closeCard() {
+    card.classList.remove("card--expanded", "card--flipped");
+    frontFace.setAttribute("aria-hidden", "false");
+    backFace.setAttribute("aria-hidden", "true");
+    overlay && overlay.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  function handleActivate() {
+    if (card.classList.contains("card--expanded")) {
+      closeCard();
+    } else {
+      // Close any other open card first
+      const open = document.querySelector(".card.card--expanded");
+      if (open && open !== card) open.classList.remove("card--expanded", "card--flipped");
+      openCard();
+    }
+  }
+
+  card.addEventListener("click", handleActivate);
   const activatorKeys = ["Enter", " ", "Spacebar", "Space"];
 
   card.addEventListener("keydown", (event) => {
     if (activatorKeys.includes(event.key)) {
       event.preventDefault();
-      toggleFlip();
+      handleActivate();
     }
   });
+
+  // Overlay click/ESC to close
+  if (overlay) {
+    overlay.addEventListener("click", () => {
+      if (card.classList.contains("card--expanded")) closeCard();
+    });
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && card.classList.contains("card--expanded")) closeCard();
+    });
+  }
 
   return card;
 }
