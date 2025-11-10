@@ -308,21 +308,26 @@ const editions = {
       },
     ],
     photos: [
-      "https://images.unsplash.com/photo-1519455953755-af066f52f1ea?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1509098681029-b45e9c845022?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1471253784676-0f039a6aae4b?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80",
+      "https://logo.clearbit.com/openai.com",
+      "https://logo.clearbit.com/stripe.com",
+      "https://logo.clearbit.com/airbnb.com",
+      "https://logo.clearbit.com/uber.com",
+      "https://logo.clearbit.com/lyft.com",
+      "https://logo.clearbit.com/spotify.com",
+      "https://logo.clearbit.com/dropbox.com",
+      "https://logo.clearbit.com/slack.com",
+      "https://logo.clearbit.com/notion.so",
+      "https://logo.clearbit.com/figma.com",
+      "https://logo.clearbit.com/databricks.com",
+      "https://logo.clearbit.com/coinbase.com",
+      "https://logo.clearbit.com/asana.com",
+      "https://logo.clearbit.com/zoom.us",
+      "https://logo.clearbit.com/twilio.com",
+      "https://logo.clearbit.com/shopify.com",
+      "https://logo.clearbit.com/snowflake.com",
+      "https://logo.clearbit.com/pinterest.com",
+      "https://logo.clearbit.com/instacart.com",
+      "https://logo.clearbit.com/reddit.com",
     ],
   },
   noir: {
@@ -532,18 +537,26 @@ const editions = {
       },
     ],
     photos: [
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1526481280695-3c46953daab3?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1482192597420-4817fdd7e8b0?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80",
+      "https://logo.clearbit.com/openai.com",
+      "https://logo.clearbit.com/stripe.com",
+      "https://logo.clearbit.com/airbnb.com",
+      "https://logo.clearbit.com/uber.com",
+      "https://logo.clearbit.com/lyft.com",
+      "https://logo.clearbit.com/spotify.com",
+      "https://logo.clearbit.com/dropbox.com",
+      "https://logo.clearbit.com/slack.com",
+      "https://logo.clearbit.com/notion.so",
+      "https://logo.clearbit.com/figma.com",
+      "https://logo.clearbit.com/databricks.com",
+      "https://logo.clearbit.com/coinbase.com",
+      "https://logo.clearbit.com/asana.com",
+      "https://logo.clearbit.com/zoom.us",
+      "https://logo.clearbit.com/twilio.com",
+      "https://logo.clearbit.com/shopify.com",
+      "https://logo.clearbit.com/snowflake.com",
+      "https://logo.clearbit.com/pinterest.com",
+      "https://logo.clearbit.com/instacart.com",
+      "https://logo.clearbit.com/reddit.com",
     ],
   },
   tropic: {
@@ -753,20 +766,33 @@ const editions = {
       },
     ],
     photos: [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1473625247510-8ceb1760943f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1521292270410-a8c7a5f8f5c4?auto=format&fit=crop&w=800&q=80",
+      "https://logo.clearbit.com/openai.com",
+      "https://logo.clearbit.com/stripe.com",
+      "https://logo.clearbit.com/airbnb.com",
+      "https://logo.clearbit.com/uber.com",
+      "https://logo.clearbit.com/lyft.com",
+      "https://logo.clearbit.com/spotify.com",
+      "https://logo.clearbit.com/dropbox.com",
+      "https://logo.clearbit.com/slack.com",
+      "https://logo.clearbit.com/notion.so",
+      "https://logo.clearbit.com/figma.com",
+      "https://logo.clearbit.com/databricks.com",
+      "https://logo.clearbit.com/coinbase.com",
     ],
   },
+};
+
+// Professional edition uses blue/white theme, reusing Radiant content
+editions.pro = {
+  theme: "theme-pro",
+  intro: {
+    eyebrow: "Professional",
+    title: "Deal‑ready startups for modern investors",
+    copy: "A crisp, professional blue theme inspired by LinkedIn/Meta to keep focus on signal while you scout.",
+  },
+  founders: editions.radiant.founders,
+  startups: editions.radiant.startups,
+  photos: editions.radiant.photos,
 };
 
 // Additional batch: a16z-backed companies Hiring now
@@ -1167,6 +1193,11 @@ const chat = {
 function initChat() {
   if (!chat.fab || !chat.el) return;
 
+  // Supabase Realtime (broadcast) if configured
+  const supaUrl = document.querySelector('meta[name="supabase-url"]')?.content;
+  const supaKey = document.querySelector('meta[name="supabase-anon-key"]')?.content;
+  const sb = (window.supabase && supaUrl && supaKey) ? window.supabase.createClient(supaUrl, supaKey) : null;
+
   // Setup identity
   chat.me = localStorage.getItem(chat.nameKey) || "";
   if (!chat.me && chat.namebar) chat.namebar.hidden = false;
@@ -1188,10 +1219,18 @@ function initChat() {
     renderChatMessages(msgs.slice(-200));
   } catch {}
 
-  // Channel
-  if ("BroadcastChannel" in window) {
-    chat.channel = new BroadcastChannel("venn-chat");
-    chat.channel.onmessage = (ev) => receiveChat(ev.data);
+  // Channel preference: Supabase Realtime broadcast -> BroadcastChannel -> storage event
+  if (sb) {
+    const channel = sb.channel('chat:global', { config: { broadcast: { self: true } } });
+    channel.on('broadcast', { event: 'message' }, (payload) => receiveChat(payload?.payload));
+    channel.subscribe();
+    chat.channel = {
+      post: (msg) => channel.send({ type: 'broadcast', event: 'message', payload: msg })
+    };
+  } else if ("BroadcastChannel" in window) {
+    const bc = new BroadcastChannel("venn-chat");
+    bc.onmessage = (ev) => receiveChat(ev.data);
+    chat.channel = { post: (msg) => bc.postMessage(msg) };
   } else {
     window.addEventListener("storage", (e) => {
       if (e.key === chat.bcKey && e.newValue) {
@@ -1270,11 +1309,35 @@ function sendChat(text) {
   const msg = { id: Math.random().toString(36).slice(2), name: chat.me, text, ts: Date.now() };
   if (chat.input) chat.input.value = "";
   receiveChat(msg);
-  if (chat.channel) {
-    chat.channel.postMessage(msg);
+  if (chat.channel && chat.channel.post) {
+    chat.channel.post(msg);
   } else {
     localStorage.setItem(chat.bcKey, JSON.stringify(msg));
   }
 }
 
 initChat();
+
+// --- Auth-aware header actions (Log In / Log Out) ---
+(function initAuthHeader() {
+  const link = document.getElementById('login-link');
+  if (!link) return;
+  const supaUrl = document.querySelector('meta[name="supabase-url"]')?.content;
+  const supaKey = document.querySelector('meta[name="supabase-anon-key"]')?.content;
+  if (!(window.supabase && supaUrl && supaKey)) return;
+  const sb = window.supabase.createClient(supaUrl, supaKey);
+  async function refresh() {
+    const { data } = await sb.auth.getSession();
+    if (data?.session) {
+      link.textContent = 'Log Out';
+      link.onclick = async (e) => { e.preventDefault(); await sb.auth.signOut(); link.textContent = 'Log In'; link.href = 'login.html'; link.onclick = null; };
+      link.href = '#';
+    } else {
+      link.textContent = 'Log In';
+      link.href = 'login.html';
+      link.onclick = null;
+    }
+  }
+  refresh();
+  sb.auth.onAuthStateChange(() => refresh());
+})();

@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Venn • Log In</title>
+    <!-- Supabase config placeholders: fill these with your project values -->
+    <meta name="supabase-url" content="YOUR_SUPABASE_URL" />
+    <meta name="supabase-anon-key" content="YOUR_SUPABASE_ANON_KEY" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +14,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Supabase JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
       .auth {
         min-height: 100vh;
@@ -86,26 +91,49 @@
       <div class="auth__card" role="dialog" aria-labelledby="auth-title">
         <h1 class="auth__title" id="auth-title">Log in to Venn</h1>
         <p class="auth__subtitle">Welcome back. Enter your credentials to continue.</p>
-        <form class="auth__form" onsubmit="event.preventDefault(); window.location.href='index.html';">
+        <form class="auth__form" id="auth-form" autocomplete="off">
           <div>
             <label for="email">Email</label>
             <input id="email" type="email" name="email" placeholder="you@company.com" required />
           </div>
-          <div>
-            <label for="password">Password</label>
-            <input id="password" type="password" name="password" placeholder="••••••••" required />
-          </div>
           <div class="auth__actions">
-            <button class="cta" type="submit">Log In</button>
+            <button class="cta" id="email-otp" type="submit">Send Magic Link</button>
             <div class="auth__links">
               <a href="#">Forgot password?</a>
               <a href="index.html" class="btn">Back</a>
             </div>
           </div>
-          <p class="auth__meta">No account? <a href="#">Request access</a></p>
+          <p class="auth__meta" id="status">No account? <a href="#">Request access</a></p>
         </form>
       </div>
     </main>
+    <script>
+      (function () {
+        const url = document.querySelector('meta[name="supabase-url"]').content;
+        const key = document.querySelector('meta[name="supabase-anon-key"]').content;
+        const sb = (window.supabase && url && key) ? window.supabase.createClient(url, key) : null;
+
+        const form = document.getElementById('auth-form');
+        const emailInput = document.getElementById('email');
+        const statusEl = document.getElementById('status');
+
+        async function init() {
+          if (!sb) return;
+          const { data } = await sb.auth.getSession();
+          if (data?.session) window.location.href = 'index.html';
+        }
+
+        form?.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          if (!sb) { statusEl.textContent = 'Supabase not configured.'; return; }
+          const email = (emailInput?.value || '').trim();
+          if (!email) return;
+          const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: window.location.origin + '/index.html' } });
+          statusEl.textContent = error ? 'Failed to send link.' : 'Check your email for a login link.';
+        });
+
+        init();
+      })();
+    </script>
   </body>
   </html>
-
