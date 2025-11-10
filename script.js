@@ -266,6 +266,46 @@ const editions = {
           "Beacon pairs scouts with founders through curated signal drops, live matches, and shared diligence notes.",
         highlights: ["Weekly deal flow drops", "Scouts in 14 cities"],
       },
+      {
+        name: "Charter Space",
+        tagline: "Developer + financial tools for spacecraft insurance",
+        category: "Space Tech",
+        description:
+          "Builds developer and financial tools for spacecraft insurance and risk management in orbit.",
+        highlights: ["Insurance APIs", "Orbital risk models"],
+      },
+      {
+        name: "Glid",
+        tagline: "Automates container movement in ports",
+        category: "Logistics",
+        description:
+          "Designs specialized vehicles and software that automate and optimize container movement in ports. Winner of Startup Battlefield 2025.",
+        highlights: ["Hardware + software stack", "Startup Battlefield 2025 winner"],
+      },
+      {
+        name: "MacroCycle",
+        tagline: "Textile-to-polymer materials recycling",
+        category: "Climate",
+        description:
+          "Recycles textile waste by depolymerizing and rebuilding polymers into new, sustainable materials (macrocycles).",
+        highlights: ["Sustainable polymers", "Textile waste circularity"],
+      },
+      {
+        name: "Nephrogen",
+        tagline: "Kidney-targeted gene delivery",
+        category: "Biotech",
+        description:
+          "Develops kidney-targeted gene-delivery therapies using an AI-driven discovery pipeline. Runner-up.",
+        highlights: ["AI discovery", "Renal delivery platform"],
+      },
+      {
+        name: "Unlisted Homes",
+        tagline: "Pre-market interest and owner matching",
+        category: "PropTech",
+        description:
+          "Lets homebuyers express interest in homes before they hit the market and connects them with owners.",
+        highlights: ["Buyer-owner matching", "Pre-market demand"],
+      },
     ],
     photos: [
       "https://images.unsplash.com/photo-1519455953755-af066f52f1ea?auto=format&fit=crop&w=800&q=80",
@@ -450,6 +490,46 @@ const editions = {
           "Lateline orchestrates voice-notes, transcripts, and midnight updates across your backers with traceable delivery.",
         highlights: ["Auto-encrypted digests", "Multi-channel reachouts"],
       },
+      {
+        name: "Charter Space",
+        tagline: "Developer + financial tools for spacecraft insurance",
+        category: "Space Tech",
+        description:
+          "Builds developer and financial tools for spacecraft insurance and risk management in orbit.",
+        highlights: ["Insurance APIs", "Orbital risk models"],
+      },
+      {
+        name: "Glid",
+        tagline: "Automates container movement in ports",
+        category: "Logistics",
+        description:
+          "Designs specialized vehicles and software that automate and optimize container movement in ports. Winner of Startup Battlefield 2025.",
+        highlights: ["Hardware + software stack", "Startup Battlefield 2025 winner"],
+      },
+      {
+        name: "MacroCycle",
+        tagline: "Textile-to-polymer materials recycling",
+        category: "Climate",
+        description:
+          "Recycles textile waste by depolymerizing and rebuilding polymers into new, sustainable materials (macrocycles).",
+        highlights: ["Sustainable polymers", "Textile waste circularity"],
+      },
+      {
+        name: "Nephrogen",
+        tagline: "Kidney-targeted gene delivery",
+        category: "Biotech",
+        description:
+          "Develops kidney-targeted gene-delivery therapies using an AI-driven discovery pipeline. Runner-up.",
+        highlights: ["AI discovery", "Renal delivery platform"],
+      },
+      {
+        name: "Unlisted Homes",
+        tagline: "Pre-market interest and owner matching",
+        category: "PropTech",
+        description:
+          "Lets homebuyers express interest in homes before they hit the market and connects them with owners.",
+        highlights: ["Buyer-owner matching", "Pre-market demand"],
+      },
     ],
     photos: [
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
@@ -631,6 +711,46 @@ const editions = {
           "Vista Azul organizes fractional ownership for eco-stays, aligning locals, investors, and founders on revitalizing surf towns.",
         highlights: ["Legal + finance stack", "Impact reporting dashboards"],
       },
+      {
+        name: "Charter Space",
+        tagline: "Developer + financial tools for spacecraft insurance",
+        category: "Space Tech",
+        description:
+          "Builds developer and financial tools for spacecraft insurance and risk management in orbit.",
+        highlights: ["Insurance APIs", "Orbital risk models"],
+      },
+      {
+        name: "Glid",
+        tagline: "Automates container movement in ports",
+        category: "Logistics",
+        description:
+          "Designs specialized vehicles and software that automate and optimize container movement in ports. Winner of Startup Battlefield 2025.",
+        highlights: ["Hardware + software stack", "Startup Battlefield 2025 winner"],
+      },
+      {
+        name: "MacroCycle",
+        tagline: "Textile-to-polymer materials recycling",
+        category: "Climate",
+        description:
+          "Recycles textile waste by depolymerizing and rebuilding polymers into new, sustainable materials (macrocycles).",
+        highlights: ["Sustainable polymers", "Textile waste circularity"],
+      },
+      {
+        name: "Nephrogen",
+        tagline: "Kidney-targeted gene delivery",
+        category: "Biotech",
+        description:
+          "Develops kidney-targeted gene-delivery therapies using an AI-driven discovery pipeline. Runner-up.",
+        highlights: ["AI discovery", "Renal delivery platform"],
+      },
+      {
+        name: "Unlisted Homes",
+        tagline: "Pre-market interest and owner matching",
+        category: "PropTech",
+        description:
+          "Lets homebuyers express interest in homes before they hit the market and connects them with owners.",
+        highlights: ["Buyer-owner matching", "Pre-market demand"],
+      },
     ],
     photos: [
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
@@ -648,6 +768,37 @@ const editions = {
     ],
   },
 };
+
+// Additional batch: a16z-backed companies Hiring now
+const hiringCompanies = [
+  { name: "Ephemera", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/46D9pWN", "N/S America - Remote"] },
+  { name: "Diode Computers, Inc.", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/4oUFDmW", "New York"] },
+  { name: "Towns Labs", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/47f6yUm", "US - Remote"] },
+  { name: "Catena Labs", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/4olgGRB", "US - Remote"] },
+  { name: "Sharp Performance", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/47IwdKZ", "Los Angeles"] },
+  { name: "Sweatpals", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/3RJEq3i", "US - Various"] },
+  { name: "Starcloud", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/3FvgKwY", "Redmond"] },
+  { name: "Merit Systems", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/3F7wDtm", "New York"] },
+  { name: "Poseidon", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/48Zmhbx", "Palo Alto"] },
+  { name: "Palmstreet", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/43qgFnx", "Various"] },
+  { name: "TruckSmarter", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/4hBf7w8", "San Francisco"] },
+  { name: "Tako", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/4oPR1QO", "Sao Paulo"] },
+  { name: "Promptfoo", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/3TYuKmo", "San Francisco"] },
+  { name: "Halliday", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/46HuiAe", "SF / NY"] },
+  { name: "Exowatt", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/4irridL", "Miami"] },
+  { name: "Larridin", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/47GYyut", "San Francisco"] },
+  { name: "Legend", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/4j0leZZ", "San Francisco"] },
+  { name: "Cluely", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/463ITpU", "San Francisco"] },
+  { name: "Toma", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/3TxcUa0", "San Francisco"] },
+  { name: "Sola", tagline: "Hiring now", category: "Hiring", description: "a16z-backed. Hiring now.", highlights: ["https://bit.ly/4p93PTv", "New York"] },
+];
+
+// Append hiring batch to each edition so it appears in any color theme
+["radiant", "noir", "tropic"].forEach((key) => {
+  if (editions[key] && Array.isArray(editions[key].startups)) {
+    editions[key].startups.push(...hiringCompanies);
+  }
+});
 
 const editionKeys = Object.keys(editions);
 const themeClasses = editionKeys.map((key) => editions[key].theme);
@@ -680,6 +831,7 @@ let activeDataset = currentEdition.startups;
 let currentCategory = "All";
 let currentQuery = "";
 let currentView = "grid"; // 'grid' | 'list'
+let isSwitchingView = false;
 
 function getCategories() {
   const set = new Set((currentEdition.startups || []).map((s) => s.category));
@@ -718,17 +870,36 @@ function applyFilters() {
 
 function setView(mode) {
   if (!stream) return;
-  currentView = mode === "list" ? "list" : "grid";
-  const isList = currentView === "list";
-  stream.classList.toggle("stream--list", isList);
+  if (isSwitchingView) return;
+  isSwitchingView = true;
+
+  const nextView = mode === "list" ? "list" : "grid";
+  // Update buttons immediately for feedback
   viewButtons.forEach((btn) => {
-    const active = btn.dataset.view === currentView;
+    const active = btn.dataset.view === nextView;
     btn.classList.toggle("is-active", active);
     btn.setAttribute("aria-selected", String(active));
   });
-  // Re-render in the new view
-  resetFeed();
-  renderInitialBatches();
+
+  // Fade out current content, then swap layout and fade in
+  stream.classList.add("is-fading-out");
+  window.setTimeout(() => {
+    currentView = nextView;
+    const isList = currentView === "list";
+    stream.classList.toggle("stream--list", isList);
+
+    resetFeed();
+    renderInitialBatches();
+
+    // Force reflow so CSS transition/animation will apply
+    void stream.offsetWidth;
+    stream.classList.remove("is-fading-out");
+    stream.classList.add("is-fading-in");
+    window.setTimeout(() => {
+      stream.classList.remove("is-fading-in");
+      isSwitchingView = false;
+    }, 260);
+  }, 180);
 }
 
 function updateIntro(intro) {
